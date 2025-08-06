@@ -4,6 +4,12 @@ outputs
 lightning_logs
 .DS_Store
 
+geoarches/data/
+geoarches/evalstore
+geoarches/modelstore
+geoarches/stats/
+geoarches/wandblogs
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
