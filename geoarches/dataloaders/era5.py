@@ -32,6 +32,8 @@ filename_filters = dict(
     test2022_z0012=lambda x: ("2022" in x) and ("0h" in x or "12h" in x),  # check if that works ?
     recent2=lambda x: any([str(y) in x for y in range(2007, 2019)]),
     empty=lambda x: False,
+    aimip_train=lambda x: not any([str(y) in x for y in range(2015, 2025)]),
+    aimip_val=lambda x: ("2014" in x or "2015" in x or "2016" in x),
 )
 
 default_dimension_indexers = {
